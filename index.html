@@ -1,23 +1,31 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Mapa</title>
-    <style>
-    #map{
-        width: 500px;
-        height: 500px; 
-    }
-    </style>
+    <meta charset="UTF8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paradas Rutas</title>
+    <script type="module" src="./WebComponent/tablaComponent.js"></script>
+    <script type="module" src="./Control/restController.js"></script>
+  
 </head>
 <body>
 
-    <div id="map"></div>
+    <header>
+        <h1>
+            <center>PARADAS DE RUTA </center>
+        </h1>
+    </header>
+<main>
+
+    <div class="row">
+            <div style="margin-left:120px;padding:1px 16px;height:600px;">
+                    <tabla-datos busqueda="recorridorutas" paginacion="5"></tabla-datos>
+                </div>
+    </div>
     
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAG9siAkDlnBiRP2gQRWV3YEEfCWznlGxQ&callback=initMap">
-  </script>
-  <script src="localizacion.js"></script>
-  <script src="mapa.js"></script>
+</main>
+    <footer>
+        <h4>RUTAS BUSES &copy; TPI-2019</h4>
+</footer>
+    
 </body>
-</html>
+</html> 

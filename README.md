@@ -1,1 +1,0 @@
-# Este es el archivo Read Me para probar que el repositorio funciona. 

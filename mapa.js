@@ -1,4 +1,4 @@
-function initMap(){
+/*function initMap(){
     const ubicacion = new Localizacion(()=>{
 
         const options = {
@@ -13,4 +13,4 @@ function initMap(){
 
         const mapa = new google.maps.Map(map, options);
     });
-}
+} */ 
