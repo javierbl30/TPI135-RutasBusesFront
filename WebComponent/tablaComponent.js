@@ -14,7 +14,7 @@ class TablaComponent extends HTMLElement {
             }
             table{
               width: 100%;
-              background-color: #FDF0D5;
+              background-color:  #16a7cb;
             }
             td, th {
               text-align: center;
@@ -74,7 +74,7 @@ class TablaComponent extends HTMLElement {
           let maxPage = Math.ceil(busquedas.length / paginacion);
           let actualPageNumber = 1;
     
-          var renderPagination = function () {
+          var renderPagination = function () {  
             sd.innerHTML = style;
     
             let changePage = function (option) {
@@ -158,9 +158,9 @@ class TablaComponent extends HTMLElement {
             let span = document.createElement("span");
             buttonFirst.innerText = "<<";
             buttonFirst.onclick = changePage;
-            buttonPrevious.innerText = "<";
+            buttonPrevious.innerText = "Anterior";
             buttonPrevious.onclick = changePage;
-            buttonNext.innerText = ">"
+            buttonNext.innerText = "Siguiente"
             buttonNext.onclick = changePage;
             buttonLast.innerText = ">>";
             buttonLast.onclick = changePage;
