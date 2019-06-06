@@ -81,11 +81,11 @@ class TablaComponent extends HTMLElement {
               if (this.innerText == '<<') {
                 actualPageNumber = 1;
                 this.disabled = true;
-              } else if (this.innerText == '<') {
+              } else if (this.innerText == 'Anterior') {
                 if (actualPageNumber != 1) {
                   actualPageNumber--;
                 }
-              } else if (this.innerText == '>') {
+              } else if (this.innerText == 'Siguiente') {
                 if (actualPageNumber != maxPage) {
                   actualPageNumber++;
                 }
